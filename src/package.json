@@ -1,0 +1,16 @@
+{
+  "name": "express-angular-website-cv",
+  "version": "1.0.0",
+  "description": "My resume/cv in website form, sort of.",
+  "main": "server.js",
+  "dependencies": {    
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "jamesryan83",
+  "license": "MIT"
+}

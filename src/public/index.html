@@ -1,0 +1,41 @@
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="css/index.css" />
+        
+        <!-- Libraries -->                
+        <script src="lib/angular.js"></script>
+        <script src="lib/angular-route.js"></script>
+        <script src="lib/angular-animate.js"></script>
+
+        <!-- My Stuff -->
+        <script src="js/app.js"></script>
+        
+    </head>
+    
+    <body ng-app="mySite" ng-init="onStart()">
+        
+        
+        <!--
+         ___                     ___ /                                  
+|_| o     | |_  _  __ _           |    __      | _ __  _  _             
+| | |     | | |(/_ | (/_ o       _|_   |||   \_|(_||||(/__>  o          
+                                                                                                                                                                                                                        
+___ /                          _      _                o           o \  
+ |    __     |  _  _  |  o __ (_|   _|_ _  __    _     |  _ |_        ) 
+_|_   |||    | (_)(_) |< | | |__|    | (_) |    (_|   _| (_)|_)    o /  
+            -->
+        
+        
+        <div id="divNavBar">
+            <nav class="navLinksTop">
+                <a href="#/">Home</a> 
+                <a href="#/about">About</a>
+                <a href="#/contact">Contact</a>
+                <a href="https://github.com/jamesryan83/express-angular-website-cv" target="_blank">Github</a>
+            </nav>
+        </div>
+        
+        <ng-view id="ngViewContainer" />
+    </body>
+</html>
