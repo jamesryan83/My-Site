@@ -1,41 +1,52 @@
 <html>
     <head>
-        
-        <link rel="stylesheet" href="css/index.css" />
-        
-        <!-- Libraries -->                
-        <script src="lib/angular.js"></script>
-        <script src="lib/angular-route.js"></script>
-        <script src="lib/angular-animate.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+        <link rel="stylesheet" href="css/app.css" />
+
+        <!-- Libraries -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-route.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-animate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-sanitize.min.js"></script>
+
 
         <!-- My Stuff -->
         <script src="js/app.js"></script>
-        
+        <script src="js/controllers/portfolioController.js"></script>
+        <script src="js/directives/portfolioImage.js"></script>
+
     </head>
-    
-    <body ng-app="mySite" ng-init="onStart()">
-        
-        
-        <!--
-         ___                     ___ /                                  
-|_| o     | |_  _  __ _           |    __      | _ __  _  _             
-| | |     | | |(/_ | (/_ o       _|_   |||   \_|(_||||(/__>  o          
-                                                                                                                                                                                                                        
-___ /                          _      _                o           o \  
- |    __     |  _  _  |  o __ (_|   _|_ _  __    _     |  _ |_        ) 
-_|_   |||    | (_)(_) |< | | |__|    | (_) |    (_|   _| (_)|_)    o /  
-            -->
-        
-        
-        <div id="divNavBar">
-            <nav class="navLinksTop">
-                <a href="#/">Home</a> 
-                <a href="#/about">About</a>
-                <a href="#/contact">Contact</a>
-                <a href="https://github.com/jamesryan83/express-angular-website-cv" target="_blank">Github</a>
-            </nav>
+
+    <body ng-app="mySite" ng-controller="mainController" ng-init="onStart()">
+
+        <div id="divContainer">
+
+            <!-- Navbar -->
+            <div id="divNavBar">
+                <div id="navLinksTop" class="center">
+                    <a class="aLink" href="#/">Home</a>
+                    <a class="aLink" href="#/about">About</a>
+                    <a class="aLink" href="#/portfolio">Portfolio</a>
+                    <a class="aLink" href="#/contact">Contact</a>
+                </div>
+
+                <div id="divSocial">
+                    <a href="https://github.com/jamesryan83" target="_blank"><img src="res/github_icon2.png" width="32" /></a>
+                    <a href="https://www.linkedin.com/in/james-ryan-2abb91107" target="_blank"><img src="res/linkedin_icon2.png" width="32" /></a>
+                </div>
+            </div>
+
+
+            <!-- Content -->
+            <div ng-view id="ngViewContainer"></div>
+
         </div>
-        
-        <ng-view id="ngViewContainer" />
+
+        <!-- Used when showing images -->
+        <div id="divImgContainer"></div>
     </body>
 </html>

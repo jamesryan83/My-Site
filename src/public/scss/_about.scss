@@ -1,0 +1,47 @@
+// About Page
+#divAbout {
+
+    h4 {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    h4:last-of-type {
+        margin-top: 15px;
+    }
+
+    // Tables
+    table {
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        white-space: nowrap;
+
+        tr {
+            border-top: 1px solid $lineColor;
+            border-bottom: 1px solid $lineColor;
+
+            td {
+                padding: 5px 25px 5px 5px;
+            }
+        }
+    }
+
+    p {
+        margin-bottom: 2px;
+    }
+
+    #divUlOuter {
+        text-align: left;
+        width: 100%;
+
+        #divUlInner {
+            display: inline-block;
+            position: relative;
+            width: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 5px 0;
+        }
+    }
+}

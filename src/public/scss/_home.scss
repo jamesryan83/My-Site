@@ -1,0 +1,26 @@
+/* Home Page */
+#divHome {
+    line-height: 2em;
+
+    // Download resume button
+    #aDownloadResume {
+        margin-top: 10px;
+        text-decoration: none;
+        color: $fontColor2;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 5px;
+        padding: 0 10px 0 10px;
+        font-weight: 600;
+        font-size: 1.2em;
+        cursor: pointer;
+
+        &:hover {
+            color: $fontColor;
+            background-color: $fontColor2;
+        }
+
+        &:active {
+            transform: scale(0.95, 0.95);
+        }
+    }
+}

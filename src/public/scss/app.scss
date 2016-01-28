@@ -1,0 +1,166 @@
+// Fonts
+@font-face {
+    font-family: Quicksand;
+    src: url("../res/fonts/Quicksand-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Quicksand;
+    font-weight: bold;
+    src: url("../res/fonts/Quicksand-Bold.ttf") format("truetype");
+}
+
+
+
+// Variables
+$fonts: Quicksand, Verdana, Geneva, sans-serif;
+$fontColor: #d1d1d1;
+$fontColor2: #359fd8;
+$fontColor3: #931eaf;
+$fontColorHover: #359fd8;
+$lineColor: #808080;
+$lineColor2: #808080;
+$lineColor3: #262936;
+$divNavBarHeight: 60px;
+
+
+
+// Imports
+@import 'about';
+@import 'contact';
+@import 'home';
+@import 'portfolio';
+@import 'navbar';
+
+
+
+
+
+// General stuff
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $fonts;
+    color: $fontColor;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow: hidden;
+}
+
+
+
+h1 {
+    margin: 5px;
+    font-size: 1.5em;
+}
+
+h4 {
+    margin: 5px;
+    font-size: 1.3em;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.aLink {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0;
+    color: $fontColor2;
+
+    &:hover {
+        color: $fontColorHover;
+    }
+
+    &:active {
+        transform: scale(0.95, 0.95);
+    }
+}
+
+
+.invisible {
+    display: none;
+}
+
+
+
+
+
+
+// main content div
+#divContainer {
+    overflow-y: scroll;
+    height: 100%;
+    //min-width: 1170px;
+
+    // Navbar
+    #divNavBar {
+        display: block;
+        position: relative;
+        height: $divNavBarHeight;
+        width: 100%;
+    }
+
+
+    // Page container
+    #ngViewContainer {
+        display: block;
+        position: relative;
+        height: calc(100% - #{$divNavBarHeight});
+        background-color: transparent;
+        width: 100%;
+        min-height: 530px;
+
+        // All Pages
+        .divContent {
+            position: absolute;
+            text-align: center;
+        }
+    }
+
+}
+
+
+// container for zoomed images
+#divImgContainer {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: all;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 4000;
+}
+
+
+// Animations for page transitions
+.ng-enter {
+    animation: scaleIn 0.3s both ease-in;
+}
+
+.ng-leave {
+    animation: scaleOut 0.2s both ease-in;
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0, 0); }
+    to { transform: scale(1, 1); }
+}
+
+@keyframes scaleOut {
+    to { transform: scale(0, 0); }
+}
+

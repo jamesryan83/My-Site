@@ -1,0 +1,76 @@
+$divPortfolioImgWidth: 320px;
+$divLinksLineHeight: 30px;
+
+// About Page
+#divPortfolio {
+    position: relative;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    min-width: 1170px;
+
+
+    // single portfolio item
+    .divPortfolioItem {
+        position: relative;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top: 1px solid $lineColor3;
+
+        .divPortfolioInner {
+            margin: 20px 0;
+            height: 200px;
+
+
+            .divPortfolioImg {
+                position: relative;
+                float: left;
+                width: $divPortfolioImgWidth;
+                height: 100%;
+
+                .divImg {
+                    position: relative;
+                    top: 0;
+                    height: calc(100% - #{$divLinksLineHeight});
+
+                    .imgPortfolio {
+                        cursor: pointer;
+                    }
+                }
+
+                .divLinks {
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    line-height: $divLinksLineHeight;
+                    white-space: nowrap;
+
+                    a {
+                        margin: 0 10px;
+                    }
+                }
+            }
+
+            .divPortfolioContent {
+                float: left;
+                width: calc(100% - #{$divPortfolioImgWidth});
+                height: 100%;
+
+                h3 {
+                    margin: 10px;
+                }
+
+                p {
+                    margin: 10px;
+                }
+            }
+        }
+    }
+
+    .divPortfolioItem:last-ofitem {
+        border-bottom: 1px solid $lineColor3;
+    }
+
+}
