@@ -25,7 +25,7 @@ angular.module("mySite").controller("portfolioController", function ($scope) {
         "linkWebsite": "",
         "linkSource": "https://github.com/jamesryan83/Shortcuts",
         "title": "Shortcuts",
-        "content": "<p>A Windows desktop program used to save a list of shortcuts to a single file which you can then send to people.  Useful in an office environment</p><p>It's is built on a small C#/WPF library I made which you can see <a class='aLink' href='https://github.com/jamesryan83/Csharp-Library' target='_blank'>here</a></p>"
+        "content": "<p>A Windows desktop program used to save a list of shortcuts to a single file which you can then send to people.  Useful in an office environment</p><p>It uses a small C#/WPF library I made which you can see <a class='aLink' href='https://github.com/jamesryan83/Csharp-Library' target='_blank'>here</a></p>"
     }, {
         "imgSrc": "../res/images/easybeam.png",
         "linkWebsite": "https://play.google.com/store/apps/details?id=test.BeamThingAndroid",
