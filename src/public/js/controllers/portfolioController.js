@@ -21,17 +21,29 @@ angular.module("mySite").controller("portfolioController", function ($scope) {
         "title": "My Personal Website",
         "content": "<p>This website right here !</p><p>It's made with Node.js and Angular</p>"
     }, {
+        "imgSrc": "../res/images/trello.png",
+        "linkWebsite": "http://trellouidemo.azurewebsites.net/",
+        "linkSource": "https://github.com/jamesryan83/TrelloUiDemo",
+        "title": "Trello UI Demo",
+        "content": "<p>This is a clone of the landing page from <a class='aLink' target='_blank' href='https://trello.com/'>Trello</a></p><p>It's supposed to demonstrate that if someone gives me a UI mockup I can do the layout for them.  There are some slight differences such as the font as they use a fairly expensive one</p><p>It uses images from Trello but I did the page layout using html and sass</p>"
+    }, {
+        "imgSrc": "../res/images/trendy.png",
+        "linkWebsite": "https://trendytrendz.azurewebsites.net/",
+        "linkSource": "https://github.com/jamesryan83/Trendytrendz",
+        "title": "Trendytrendz",
+        "content": "<p>Searches Google and Reddit based on Twitter trending hashtags</p><p>It uses the <a class='aLink'  href='https://dev.twitter.com/rest/public' target='_blank'>Twitter</a> and <a class='aLink'  href='https://developers.google.com/custom-search/json-api/v1/overview' target='_blank'>Google</a> apis.  Both of these apis have very strict usage limits, so this website is really only a demo</p><p>Twitter only allows 1 api call per minute for trend data, so there is a separate Azure Webjob that runs continuously and updates the data for each country which is then cached on the server.  Therefore the trend data may be up to 2 hours old</p><p>Made with Node.js/html/sass/javascript</p>"
+    }, {
         "imgSrc": "../res/images/Shortcuts.png",
         "linkWebsite": "",
         "linkSource": "https://github.com/jamesryan83/Shortcuts",
         "title": "Shortcuts",
-        "content": "<p>A Windows desktop program used to save a list of shortcuts to a single file which you can then send to people.  Useful in an office environment</p><p>It uses a small C#/WPF library I made which you can see <a class='aLink' href='https://github.com/jamesryan83/Csharp-Library' target='_blank'>here</a></p>"
+        "content": "<p>A Windows desktop program used to save a list of shortcuts to a single file which you can then send to people.  Useful in an office environment</p><p>It's in C# and WPF and is built on a C#/WPF library which you can see <a class='aLink' href='https://github.com/jamesryan83/Csharp-Library' target='_blank'>here</a></p>"
     }, {
         "imgSrc": "../res/images/easybeam.png",
         "linkWebsite": "https://play.google.com/store/apps/details?id=test.BeamThingAndroid",
         "linkSource": "",
         "title": "EasyBeam",
-        "content": "<p>This is an Android app for continuous beam analysis for engineers.  It calculates bending moments, shear forces and deflections of multi-span beams</p><p>I made it with Java back in 2011 not long after I started programming, please ignore how hideous it looks :)<p>"
+        "content": "<p>This is an Android app for continuous beam analysis for engineers.  It calculates bending moments, shear forces and deflections of multi-span beams</p><p>I made it with Java back in 2011 not long after I started programming, please ignore how hideous it looks :)</p>"
     }, {
         "imgSrc": "../res/images/Inkscape.png",
         "linkWebsite": "http://jamesryan83.github.io/Get-text-from-Inkscape/",
