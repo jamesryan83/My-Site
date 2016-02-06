@@ -64,7 +64,7 @@ angular.module("mySite").controller("portfolioController", function ($scope) {
         "linkDownload": "",
         "linkSource": "https://github.com/jamesryan83/Portal-Frame-Designer",
         "title": "Portal Frame designer",
-        "content": "<p>Portal Frame Designer was part of my engineering thesis at uni.  The user inputs describe the dimensions and member sizes of a portal frame building.  This data is then sent to an Excel spreadsheet where loads (wind etc.) are applied using VBA, then that data was sent to <a class='aLink'  target='_blank' href='http://www.maxsurf.net/multiframe.html'>Multiframe</a> using the Multiframe API.</p><p>It's written in C#/WPF and uses <a class='aLink' target='_blank' href='https://github.com/helix-toolkit/helix-toolkit'>Helix Toolkit</a> to display a 3D model of the building</p>"
+        "content": "<p>Portal Frame Designer was part of my engineering thesis at uni.  The user inputs describe the dimensions and member sizes of a portal frame building.  This data is then sent to an Excel spreadsheet where loads (wind etc.) are applied using VBA, then that data was sent to <a class='aLink'  target='_blank' href='http://www.maxsurf.net/multiframe.html'>Multiframe</a> using the Multiframe API.</p><p>It's written in C#/WPF and uses <a class='aLink' target='_blank' href='http://docs.helix-toolkit.org/en/latest/introduction/introduction.html'>Helix Toolkit</a> to display a 3D model of the building</p>"
     }, {
         "imgSrc": "../res/images/Redmine.png",
         "linkWebsite": "",
