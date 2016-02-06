@@ -20,7 +20,7 @@ angular.module("mySite").controller("portfolioController", function ($scope) {
         "imgSrc": "../res/images/mySite.png",
         "linkWebsite": "",
         "linkDownload": "",
-        "linkSource": "https://github.com/jamesryan83/express-angular-website-cv",
+        "linkSource": "https://github.com/jamesryan83/My-Site",
         "title": "My Personal Website",
         "content": "<p>This website right here !</p><p>It's made with Node.js and Angular</p>"
     }, {
