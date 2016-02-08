@@ -52,13 +52,6 @@ angular.module("mySite").controller("portfolioController", function ($scope) {
         "title": "EasyBeam",
         "content": "<p>This is an Android app for continuous beam analysis for engineers.  It calculates bending moments, shear forces and deflections of multi-span beams</p><p>I made it with Java back in 2011 not long after I started programming, please ignore how hideous it looks :)</p>"
     }, {
-        "imgSrc": "../res/images/Inkscape.png",
-        "linkWebsite": "http://jamesryan83.github.io/Get-text-from-Inkscape/",
-        "linkDownload": "",
-        "linkSource": "https://github.com/jamesryan83/Get-text-from-Inkscape",
-        "title": "Get Text From Inkscape",
-        "content": "<p>This a very small web app that takes an Inkscape file (.svg), parses it, and returns the text<p>"
-    }, {
         "imgSrc": "../res/images/PortalFrame.png",
         "linkWebsite": "",
         "linkDownload": "",
