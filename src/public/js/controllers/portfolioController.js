@@ -50,7 +50,7 @@ angular.module("mySite").controller("portfolioController", function ($scope) {
         "linkDownload": "",
         "linkSource": "",
         "title": "EasyBeam",
-        "content": "<p>This is an Android app for continuous beam analysis for engineers.  It calculates bending moments, shear forces and deflections of multi-span beams</p><p>I made it with Java back in 2011 not long after I started programming, please ignore how hideous it looks :)</p>"
+        "content": "<p>This is an Android app for continuous beam analysis for engineers.  It calculates bending moments, shear forces and deflections of multi-span beams</p><p>The trial version has almost 30,000 downloads so far.  I made it with Java back in 2011 not long after I started programming, please ignore how hideous it looks :)</p>"
     }, {
         "imgSrc": "../res/images/PortalFrame.png",
         "linkWebsite": "",
