@@ -7,7 +7,6 @@ $divLinksLineHeight: 30px;
     width: 100%;
     overflow-y: hidden;
     overflow-x: auto;
-    min-width: 1170px;
 
 
     // single portfolio item
@@ -73,4 +72,36 @@ $divLinksLineHeight: 30px;
         border-bottom: 1px solid $lineColor3;
     }
 
+
+
+
+    @media (max-width: 1170px) {
+        .divPortfolioInner {
+            height: 250px !important;
+        }
+    }
+
+
+    @media (max-width: $screenMinWidth) {
+        .divPortfolioInner {
+            height: 100% !important;
+            display: flex !important;
+            flex-flow: column;
+            width: 100% !important;
+
+            .divPortfolioImg {
+                height: 180px !important;
+                order: 2;
+                float: none !important;
+                width: 100% !important;
+            }
+
+            .divPortfolioContent {
+                height: 220px !important;
+                order: 1;
+                float: none !important;
+                width: 100% !important;
+            }
+        }
+    }
 }

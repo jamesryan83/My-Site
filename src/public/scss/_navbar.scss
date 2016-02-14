@@ -3,7 +3,7 @@
     font-size: 1.3em;
 
     a {
-        margin: 0 10px;        
+        margin: 0 10px;
     }
 }
 
@@ -12,11 +12,51 @@
 // social links
 #divSocial {
     position: absolute;
-    right: 50px;
-    top: 50%;
-    transform: translateY(-50%);
+    right: 20px;
+    top: 20px;
+    //transform: translateY(-50%);
+    text-align: center;
 
     a {
         margin-right: 15px;
+    }
+
+
+
+    #divDownloadResume {
+        margin-top: 10px;
+
+        // Download resume button
+        #aDownloadResume {
+            margin-top: 10px;
+            text-decoration: none;
+            color: $fontColor2;
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: 5px;
+            padding: 0 10px 0 10px;
+            font-weight: 600;
+            font-size: 1.2em;
+            cursor: pointer;
+            padding: 2px 15px;
+
+            &:hover {
+                color: $fontColor;
+                background-color: $fontColor2;
+            }
+
+            &:active {
+                transform: scale(0.95, 0.95);
+            }
+        }
+    }
+
+}
+
+
+
+@media (max-width: $screenMinWidth) {
+    #navLinksTop {
+        left: 30px !important;
+        transform: translate(0%, -50%) !important;
     }
 }

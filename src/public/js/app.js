@@ -2,9 +2,7 @@
 angular.module("mySite", ["ngRoute", "ngAnimate", "ngSanitize"])
 
 .config(function($routeProvider, $locationProvider) {
-    $routeProvider.when("/", {
-        templateUrl: "views/home.html"
-    }).when("/about", {
+    $routeProvider.when("/about", {
         templateUrl: "views/about.html"
     }).when("/portfolio", {
         templateUrl: "views/portfolio.html",
@@ -12,7 +10,7 @@ angular.module("mySite", ["ngRoute", "ngAnimate", "ngSanitize"])
     }).when("/contact", {
         templateUrl: "views/contact.html"
     }).otherwise({
-        redirectTo: "/"
+        redirectTo: "/about"
     });
 })
 

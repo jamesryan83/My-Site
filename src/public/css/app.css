@@ -7,68 +7,54 @@
   font-weight: bold;
   src: url("../res/fonts/Quicksand-Bold.ttf") format("truetype"); }
 
-#divAbout h4 {
-  margin-top: 0;
-  padding-top: 0; }
-
-#divAbout h4:last-of-type {
-  margin-top: 15px; }
-
-#divAbout table {
-  border-collapse: collapse;
-  margin-left: auto;
-  margin-right: auto;
-  white-space: nowrap; }
-  #divAbout table tr {
-    border-top: 1px solid #808080;
-    border-bottom: 1px solid #808080; }
-    #divAbout table tr td {
-      padding: 5px 25px 5px 5px; }
-
-#divAbout p {
-  margin-bottom: 2px; }
-
-#divAbout #divUlOuter {
-  text-align: left;
-  width: 100%; }
-  #divAbout #divUlOuter #divUlInner {
-    display: inline-block;
-    position: relative;
-    width: auto;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    padding: 5px 0; }
+#divAbout {
+  max-width: 712px; }
+  #divAbout #divHeading {
+    margin-bottom: 20px; }
+  #divAbout h4 {
+    margin-top: 0;
+    padding-top: 0; }
+  #divAbout h4:last-of-type {
+    margin-top: 15px; }
+  #divAbout table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap; }
+    #divAbout table tr {
+      border-top: 1px solid #808080;
+      border-bottom: 1px solid #808080; }
+      #divAbout table tr td {
+        padding: 5px 25px 5px 5px; }
+  #divAbout p {
+    margin-bottom: 2px; }
+  #divAbout #divUlOuter {
+    text-align: left;
+    width: 100%; }
+    #divAbout #divUlOuter #divUlInner {
+      display: inline-block;
+      position: relative;
+      width: auto;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      padding: 5px 0; }
+  @media (max-height: 730px) {
+    #divAbout {
+      position: relative !important;
+      padding: 20px 0;
+      top: 0;
+      -webkit-transform: translate(-50%, 0);
+      transform: translate(-50%, 0); } }
 
 #divContact {
   line-height: 2em; }
-
-/* Home Page */
-#divHome {
-  line-height: 2em; }
-  #divHome #aDownloadResume {
-    margin-top: 10px;
-    text-decoration: none;
-    color: #359fd8;
-    background-color: transparent;
-    border-radius: 5px;
-    padding: 0 10px 0 10px;
-    font-weight: 600;
-    font-size: 1.2em;
-    cursor: pointer; }
-    #divHome #aDownloadResume:hover {
-      color: #d1d1d1;
-      background-color: #359fd8; }
-    #divHome #aDownloadResume:active {
-      -webkit-transform: scale(0.95, 0.95);
-      transform: scale(0.95, 0.95); }
 
 #divPortfolio {
   position: relative;
   width: 100%;
   overflow-y: hidden;
-  overflow-x: auto;
-  min-width: 1170px; }
+  overflow-x: auto; }
   #divPortfolio .divPortfolioItem {
     position: relative;
     width: 80%;
@@ -110,6 +96,28 @@
           margin: 10px; }
   #divPortfolio .divPortfolioItem:last-ofitem {
     border-bottom: 1px solid #262936; }
+  @media (max-width: 1170px) {
+    #divPortfolio .divPortfolioInner {
+      height: 250px !important; } }
+  @media (max-width: 970px) {
+    #divPortfolio .divPortfolioInner {
+      height: 100% !important;
+      display: -webkit-box !important;
+      display: flex !important;
+      flex-flow: column;
+      width: 100% !important; }
+      #divPortfolio .divPortfolioInner .divPortfolioImg {
+        height: 180px !important;
+        -webkit-box-ordinal-group: 3;
+        order: 2;
+        float: none !important;
+        width: 100% !important; }
+      #divPortfolio .divPortfolioInner .divPortfolioContent {
+        height: 220px !important;
+        -webkit-box-ordinal-group: 2;
+        order: 1;
+        float: none !important;
+        width: 100% !important; } }
 
 #navLinksTop {
   font-size: 1.3em; }
@@ -118,12 +126,36 @@
 
 #divSocial {
   position: absolute;
-  right: 50px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  right: 20px;
+  top: 20px;
+  text-align: center; }
   #divSocial a {
     margin-right: 15px; }
+  #divSocial #divDownloadResume {
+    margin-top: 10px; }
+    #divSocial #divDownloadResume #aDownloadResume {
+      margin-top: 10px;
+      text-decoration: none;
+      color: #359fd8;
+      background-color: transparent;
+      border-radius: 5px;
+      padding: 0 10px 0 10px;
+      font-weight: 600;
+      font-size: 1.2em;
+      cursor: pointer;
+      padding: 2px 15px; }
+      #divSocial #divDownloadResume #aDownloadResume:hover {
+        color: #d1d1d1;
+        background-color: #359fd8; }
+      #divSocial #divDownloadResume #aDownloadResume:active {
+        -webkit-transform: scale(0.95, 0.95);
+        transform: scale(0.95, 0.95); }
+
+@media (max-width: 970px) {
+  #navLinksTop {
+    left: 30px !important;
+    -webkit-transform: translate(0%, -50%) !important;
+    transform: translate(0%, -50%) !important; } }
 
 * {
   margin: 0;
@@ -171,16 +203,17 @@ h4 {
 
 #divContainer {
   overflow-y: scroll;
-  height: 100%; }
+  height: 100%;
+  min-width: 738px; }
   #divContainer #divNavBar {
     display: block;
     position: relative;
-    height: 60px;
+    height: 100px;
     width: 100%; }
   #divContainer #ngViewContainer {
     display: block;
     position: relative;
-    height: calc(100% - 60px);
+    height: calc(100% - 100px);
     background-color: transparent;
     width: 100%;
     min-height: 530px; }

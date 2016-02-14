@@ -36,7 +36,7 @@ angular.module("mySite").controller("portfolioController", function ($scope) {
         "linkDownload": "",
         "linkSource": "https://github.com/jamesryan83/Trendytrendz",
         "title": "Trendytrendz",
-        "content": "<p>Searches Google and Reddit based on Twitter trending hashtags</p><p>It uses the <a class='aLink'  href='https://dev.twitter.com/rest/public' target='_blank'>Twitter</a> and <a class='aLink'  href='https://developers.google.com/custom-search/json-api/v1/overview' target='_blank'>Google</a> apis.  Both of these apis have very strict usage limits, so this website is really only a demo</p><p>Twitter only allows 1 api call per minute for trend data, so there is a separate Azure Webjob that runs continuously and updates the data for each country which is then cached on the server.  Therefore the trend data may be up to 2 hours old</p><p>Made with Node.js/html/sass/javascript</p>"
+        "content": "<p>Searches Google and Reddit based on Twitter trending hashtags</p><p>It uses the <a class='aLink'  href='https://dev.twitter.com/rest/public' target='_blank'>Twitter</a> and <a class='aLink'  href='https://developers.google.com/custom-search/json-api/v1/overview' target='_blank'>Google</a> apis.  Both of these apis have very strict usage limits, so this website is really only a demo</p><p>Twitter only allows 1 api call per minute for trend data, so there is a separate Azure Webjob that runs continuously and updates the data for each country which is then cached on the server</p><p>Made with Node.js/html/sass/javascript</p>"
     }, {
         "imgSrc": "../res/images/Shortcuts.png",
         "linkWebsite": "",
