@@ -3,7 +3,11 @@
     max-width: 712px;
 
     #divHeading {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
+
+        h1 {
+            font-size: 2em;
+        }
     }
 
     h4 {
@@ -50,7 +54,7 @@
         }
     }
 
-    @media (max-height: 730px) {  // if height <= 730px
+    @media (max-height: 750px) {  // if height <= 750px
         position: relative !important;
         padding: 20px 0;
         top: 0;
