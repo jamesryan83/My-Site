@@ -3,6 +3,13 @@
 angular.module("mySite").controller("portfolioController", function ($scope) {
 
     $scope.portfolioData = [{
+        "imgSrc": "../res/images/tasktime.png",
+        "linkWebsite": "http://task-time.azurewebsites.net",
+        "linkDownload": "",
+        "linkSource": "https://github.com/jamesryan83/tasktime",
+        "title": "Tasktime",
+        "content": "<p>Tasktime is a todo list website.  You can create Tasks which are grouped into what are called Timeline Items.  It's a simple way to keep a list of the days tasks</p><p>It's made with SQL Server, PHP and Laravel, html/sass/javascript and Twitter bootstrap</p>"
+    }, {
         "imgSrc": "../res/images/scattertale.png",
         "linkWebsite": "http://scattertale.azurewebsites.net",
         "linkDownload": "",
