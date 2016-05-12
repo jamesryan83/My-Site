@@ -8,7 +8,7 @@ angular.module("mySite").controller("portfolioController", function ($scope) {
         "linkDownload": "",
         "linkSource": "",
         "title": "Neeonn",
-        "content": "<p>Neeonn is a concept/prototype for a social storyboard sharing platform.  It consists of a website and an Android app</p><p>The website is made with PHP and Laravel on the server, and Backbone and jQuery on the frontend.  The Android app is made with Apache Cordova, backbone and jQuery</p>"
+        "content": "<p>Neeonn is a concept/prototype for a social storyboard sharing platform.  It consists of a website and an Android app</p><p>The website is made with PHP and Laravel on the server, with Backbone and jQuery on the frontend.  The Android app is made with Apache Cordova, Backbone and jQuery</p>"
     }, {
         "imgSrc": "../res/images/spottycats.png",
         "linkWebsite": "http://spottycats.com",
