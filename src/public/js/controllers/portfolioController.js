@@ -3,6 +3,20 @@
 angular.module("mySite").controller("portfolioController", function ($scope) {
 
     $scope.portfolioData = [{
+        "imgSrc": "../res/images/neeonn.png",
+        "linkWebsite": "http://shoteratetest.azurewebsites.net",
+        "linkDownload": "",
+        "linkSource": "",
+        "title": "Neeonn",
+        "content": "<p>Neeonn is a concept/prototype for a social storyboard sharing platform.  It consists of a website and an Android app</p><p>The website is made with PHP and Laravel on the server, and Backbone and jQuery on the frontend.  The Android app is made with Apache Cordova, backbone and jQuery</p>"
+    }, {
+        "imgSrc": "../res/images/spottycats.png",
+        "linkWebsite": "http://spottycats.com",
+        "linkDownload": "",
+        "linkSource": "",
+        "title": "Spottycats",
+        "content": "<p>This was a Wordpress site developed for a client.  Spottycats is a blogging site for  someone teaching English grammar and IELTS to english second language students.  It uses a customised Wordpress theme with some additional plugins for creating quizzes</p>"
+    }, {
         "imgSrc": "../res/images/tasktime.png",
         "linkWebsite": "http://task-time.azurewebsites.net",
         "linkDownload": "",
@@ -65,16 +79,18 @@ angular.module("mySite").controller("portfolioController", function ($scope) {
         "linkSource": "https://github.com/jamesryan83/Portal-Frame-Designer",
         "title": "Portal Frame designer",
         "content": "<p>Portal Frame Designer was part of my engineering thesis at uni.  The user inputs describe the dimensions and member sizes of a portal frame building.  This data is then sent to an Excel spreadsheet where loads (wind etc.) are applied using VBA, then that data was sent to <a class='aLink'  target='_blank' href='http://www.maxsurf.net/multiframe.html'>Multiframe</a> using the Multiframe API.</p><p>It's written in C#/WPF and uses <a class='aLink' target='_blank' href='http://docs.helix-toolkit.org/en/latest/introduction/introduction.html'>Helix Toolkit</a> to display a 3D model of the building</p>"
-    }, {
-        "imgSrc": "../res/images/Redmine.png",
-        "linkWebsite": "",
-        "linkDownload": "",
-        "linkSource": "https://github.com/jamesryan83/Create-Redmine-Issue",
-        "title": "Create Redmine Issues",
-        "content": "<p>This is a single page web app that creates Issues on <a class='aLink' target='_blank' href='http://www.redmine.org'>Redmine</a> using the <a class='aLink' target='_blank' href='http://www.redmine.org/projects/redmine/wiki/Rest_api'>Redmine API</a></p><p>It is intended to be run on a local server with Redmine installed</p>"
-    }]
+    }, ]
 
 
+
+//    {
+//        "imgSrc": "../res/images/Redmine.png",
+//        "linkWebsite": "",
+//        "linkDownload": "",
+//        "linkSource": "https://github.com/jamesryan83/Create-Redmine-Issue",
+//        "title": "Create Redmine Issues",
+//        "content": "<p>This is a single page web app that creates Issues on <a class='aLink' target='_blank' href='http://www.redmine.org'>Redmine</a> using the <a class='aLink' target='_blank' href='http://www.redmine.org/projects/redmine/wiki/Rest_api'>Redmine API</a></p><p>It is intended to be run on a local server with Redmine installed</p>"
+//    }
 
 
 });
