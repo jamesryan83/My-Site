@@ -6,7 +6,7 @@ angular.module("mySite").controller("portfolioController", function ($scope) {
         "imgSrc": "../res/images/technicorp.png",
         "linkWebsite": "http://technicorp.azurewebsites.net",
         "linkDownload": "",
-        "linkSource": "",
+        "linkSource": "https://github.com/jamesryan83/technicorp",
         "title": "Technicorp",
         "content": "<p>This is a demo home page.  It has a parallax scrolling background and I was also trying out using svg images for slanted backgrounds which you can see in the navbar and login dialogs.  Made with html, sass and jQuery</p>"
     }, {
