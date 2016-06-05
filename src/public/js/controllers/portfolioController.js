@@ -3,6 +3,13 @@
 angular.module("mySite").controller("portfolioController", function ($scope) {
 
     $scope.portfolioData = [{
+        "imgSrc": "../res/images/galaxi.png",
+        "linkWebsite": "http://galaxi.azurewebsites.net",
+        "linkDownload": "",
+        "linkSource": "https://github.com/jamesryan83/galaxi",
+        "title": "Galaxi",
+        "content": "<p>This is a demo home page.  It uses Greensock and ScrollMagic for animations.  Art was made in Inkscape.  Code is html, sass and jQuery</p>"
+    }, {
         "imgSrc": "../res/images/technicorp.png",
         "linkWebsite": "http://technicorp.azurewebsites.net",
         "linkDownload": "",
