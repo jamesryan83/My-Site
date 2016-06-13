@@ -3,6 +3,13 @@
 angular.module("mySite").controller("portfolioController", function ($scope) {
 
     $scope.portfolioData = [{
+        "imgSrc": "../res/images/thingz.png",
+        "linkWebsite": "http://thingz.azurewebsites.net",
+        "linkDownload": "",
+        "linkSource": "",
+        "title": "Thingz",
+        "content": "<p>Demo page</p>"
+    }, {
         "imgSrc": "../res/images/galaxi.png",
         "linkWebsite": "http://galaxi.azurewebsites.net",
         "linkDownload": "",
