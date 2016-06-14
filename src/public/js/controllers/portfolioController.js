@@ -27,7 +27,7 @@ angular.module("mySite").controller("portfolioController", function ($scope) {
         "imgSrc": "../res/images/neeonn.png",
         "linkWebsite": "http://shoteratetest.azurewebsites.net",
         "linkDownload": "",
-        "linkSource": "",
+        "linkSource": "https://github.com/jamesryan83/Neeonn",
         "title": "Neeonn",
         "content": "<p>Neeonn is a concept/prototype for a social storyboard sharing platform.  It consists of a website and an Android app</p><p>The website is made with PHP and Laravel on the server, with Backbone and jQuery on the frontend.  The Android app is made with Apache Cordova, Backbone and jQuery</p>"
     }, {
