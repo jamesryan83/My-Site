@@ -31,13 +31,6 @@ angular.module("mySite").controller("portfolioController", function ($scope) {
         "title": "Neeonn",
         "content": "<p>Neeonn is a concept/prototype for a social storyboard sharing platform.  It consists of a website and an Android app</p><p>The website is made with PHP and Laravel on the server, with Backbone and jQuery on the frontend.  The Android app is made with Apache Cordova, Backbone and jQuery</p>"
     }, {
-        "imgSrc": "../res/images/spottycats.png",
-        "linkWebsite": "http://spottycats.com",
-        "linkDownload": "",
-        "linkSource": "",
-        "title": "Spottycats",
-        "content": "<p>This was a Wordpress site developed for a client.  Spottycats is a blogging site for  someone teaching English grammar and IELTS to english second language students.  It uses a customised Wordpress theme with some additional plugins for creating quizzes</p>"
-    }, {
         "imgSrc": "../res/images/tasktime.png",
         "linkWebsite": "http://task-time.azurewebsites.net",
         "linkDownload": "",
