@@ -8,7 +8,7 @@ angular.module("mySite").controller("portfolioController", function ($scope) {
         "linkDownload": "",
         "linkSource": "",
         "title": "Thingz",
-        "content": "<p>Demo page.  Will add details soon</p>"
+        "content": "<p>Demo homepage.  Similar setup to Galaxi (below)</p>"
     }, {
         "imgSrc": "../res/images/galaxi.png",
         "linkWebsite": "http://galaxi.azurewebsites.net",
