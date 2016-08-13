@@ -6,7 +6,7 @@ angular.module("mySite").controller("portfolioController", function ($scope) {
         "imgSrc": "../res/images/thingz.png",
         "linkWebsite": "http://thingz.azurewebsites.net",
         "linkDownload": "",
-        "linkSource": "",
+        "linkSource": "https://github.com/jamesryan83/thingz",
         "title": "Thingz",
         "content": "<p>Demo homepage.  Similar setup to Galaxi (below)</p>"
     }, {
