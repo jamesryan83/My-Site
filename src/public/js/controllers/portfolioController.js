@@ -29,7 +29,7 @@ angular.module("mySite").controller("portfolioController", function ($scope) {
         "linkDownload": "",
         "linkSource": "https://github.com/jamesryan83/Neeonn",
         "title": "Neeonn",
-        "content": "<p>Neeonn is a concept/prototype for a social storyboard sharing platform.  It consists of a website and an Android app</p><p>The website is made with PHP and Laravel on the server, with Backbone and jQuery on the frontend.  The Android app is made with Apache Cordova, Backbone and jQuery</p>"
+        "content": "<p>Neeonn is a concept/prototype for a social storyboard sharing platform.  It consists of a website and an Android app</p><p>The website is made with PHP and Laravel on the server, with Backbone and jQuery on the frontend.  The Android app is made with Apache Cordova, Backbone and jQuery</p><p>You can log in with un: test@neeonn.com and pw: neeonn if you want to have a look at the storyboard creating tools inside.  Same login credentials for the app too</p>"
     }, {
         "imgSrc": "../res/images/tasktime.png",
         "linkWebsite": "http://task-time.azurewebsites.net",
