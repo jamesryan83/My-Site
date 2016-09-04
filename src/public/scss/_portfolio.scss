@@ -9,6 +9,12 @@ $divLinksLineHeight: 30px;
     overflow-x: auto;
 
 
+    #info-portfolio {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+
     // single portfolio item
     .divPortfolioItem {
         position: relative;
@@ -20,7 +26,6 @@ $divLinksLineHeight: 30px;
         .divPortfolioInner {
             margin: 20px 0;
             height: 200px;
-
 
             .divPortfolioImg {
                 position: relative;
