@@ -8,7 +8,8 @@ angular.module("mySite").controller("portfolioController", function ($scope) {
         "linkDownload": "",
         "linkSource": "https://github.com/jamesryan83/thingz",
         "title": "Thingz",
-        "content": "<p>Demo homepage.  Similar setup to Galaxi (below)</p>"
+        "content": "<p>Demo homepage.  Similar setup to Galaxi (below)</p>" +
+            "<p>Probably won't work on Internet Explorer, because it uses webm format videos</p>"
     }, {
         "imgSrc": "../res/images/galaxi.png",
         "linkWebsite": "http://galaxi.azurewebsites.net",
