@@ -1,4 +1,4 @@
 # My Site
-My portfolio website.  Using node, express, sass and angular.
+My portfolio website
 
 [Website is here](http://jamesryan.azurewebsites.net/)
