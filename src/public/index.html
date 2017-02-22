@@ -1,28 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
         <link rel="stylesheet" href="css/app.css" />
-
-        <!-- Libraries -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-route.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-animate.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-sanitize.min.js"></script>
-
-
-        <!-- My Stuff -->
         <script src="js/app.js"></script>
-        <script src="js/controllers/portfolioController.js"></script>
-        <script src="js/directives/portfolioImage.js"></script>
-
     </head>
 
-    <body ng-app="mySite" ng-controller="mainController" ng-init="onStart()">
+    <body>
 
          <!-- Google Analytics -->
         <script>
@@ -36,29 +21,134 @@
         </script>
 
 
+
+
+
          <!-- Main div -->
-        <div id="divContainer">
+        <div id="main-container">
+
+
+
 
             <!-- Navbar -->
-            <div id="divNavBar">
-                <div id="navLinksTop" class="center">
-                    <a class="aLink" href="#/about">About</a>
-                    <a class="aLink" href="#/portfolio">Portfolio</a>
-                    <a class="aLink" href="#/contact">Contact</a>
-                </div>
-
-                <div id="divSocial">
-                    <a href="https://github.com/jamesryan83" target="_blank"><img src="res/github_icon.png" width="32" /></a>
-                </div>
+            <div id="navbar-social">
+                <a href="https://github.com/jamesryan83" target="_blank"><img src="res/github_icon.png" width="32" /></a>
             </div>
 
 
-            <!-- Content -->
-            <div ng-view id="ngViewContainer"></div>
 
+
+            <div id="main-content">
+
+                <!-- Name and stuff -->
+                <div id="about-heading">
+                    <h1>James Ryan</h1>
+                    <p>Civil Engineer & Programmer</p>
+                    <p>Brisbane, Australia</p>
+                </div>
+
+
+
+                <!-- Education -->
+                <a class="a-heading">Education</a>
+                <table>
+                    <tr>
+                        <td class="td-date">2009 - 2013</td>
+                        <td>
+                            Bachelor of Civil Engineering majoring in Civil & Construction at <a class="aLink"
+                                 target="_blank" href="https://www.qut.edu.au/">QUT</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-date">2005 - 2006</td>
+                        <td>
+                            Diploma of Mechanical Engineering at <a class="aLink"  target="_blank"
+                                                                    href="http://tafebrisbane.edu.au/">TAFE</a>
+                        </td>
+                    </tr>
+                </table>
+
+
+
+                <!-- Programming -->
+                <a name="programming" class="a-heading">Programming</a>
+                <div id="programming-container">
+                    <div id="programming-notes">
+                        <p>I've been programming on my own independent projects, and at some of my previous workplaces, for over 6 years and I have experience with the following technologies:</p>
+                    </div>
+
+                    <div id="programming-skills">
+                        <ul>
+                            <li><span class="star-six"></span>html, css/sass, javascript, jQuery</li>
+                            <li><span class="star-six"></span>Node.js and PHP/Laravel</li>
+                            <li><span class="star-six"></span>Azure Websites</li>
+                            <li><span class="star-six"></span>Apache Cordova and Node-Webkit</li>
+                            <li><span class="star-six"></span>C# and WPF for Windows Desktop</li>
+                            <li><span class="star-six"></span>Excel and VBA</li>
+                            <li><span class="star-six"></span>Java for Android and Desktop</li>
+                            <li><span class="star-six"></span>SQL Server</li>
+                            <li><span class="star-six"></span>Inkscape (mockup drawings and svg icons)</li>
+                        </ul>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+
+
+                 <!-- Contact -->
+                <a name="contact" class="a-heading">Contact</a>
+                <p>Email: james4165@hotmail.com</p>
+
+
+
+                <!-- Portfolio -->
+                <a name="portfolio" class="a-heading">Portfolio</a>
+                <div id="portfolio">
+
+                    <p id="info-portfolio">Please note that these websites are on the Azure free plan so they can take a while to load.  Some pages will timeout Azure is so slow.  If you see an error, try refreshing</p>
+
+                    <div id="portfolio-items"></div>
+                </div>
+
+            </div>
+
+
+
+
+            <!-- Portfolio item template -->
+            <div id="portfolio-item-template" style="display: none;">
+                <div class="portfolio-item">
+
+                    <!-- Text -->
+                    <div class="portfolio-item-right">
+                        <h3></h3>
+                    </div>
+
+
+                    <!-- Image & links -->
+                    <div class="portfolio-item-left">
+                        <div class="portfolio-item-image-container">
+                            <div class="center">
+                                <img class="portfolio-item-image" src="" height="150" />
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item-links">
+                            <a class="porfolio-item-link" target="_blank">Link</a>
+                            <a class="porfolio-item-download" target="_blank">Download</a>
+                            <a class="porfolio-item-source" target="_blank">Source</a>
+                        </div>
+                    </div>
+
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
         </div>
 
-        <!-- Used when showing images -->
-        <div id="divImgContainer"></div>
+
     </body>
+
+
 </html>

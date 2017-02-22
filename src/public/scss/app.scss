@@ -16,26 +16,16 @@
 $fonts: Quicksand, Verdana, Geneva, sans-serif;
 $fontColor: #d1d1d1;
 $fontColor2: #359fd8;
-$fontColor3: #931eaf;
-$fontColorHover: #359fd8;
+$fontColorHover: #006bfd;
 $lineColor: #808080;
-$lineColor2: #808080;
-$lineColor3: #262936;
-$divNavBarHeight: 100px;
+$lineColor2: #262936;
+
 $screenMinWidth: 970px;
-
-
-// Imports
-@import 'about';
-@import 'contact';
-@import 'portfolio';
-@import 'navbar';
+$divPortfolioImgWidth: 320px;
+$divLinksLineHeight: 30px;
 
 
 
-
-
-// General stuff
 
 * {
     margin: 0;
@@ -46,23 +36,20 @@ $screenMinWidth: 970px;
 }
 
 html, body {
-    height: 100%;
     width: 100%;
+    height: 100%;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    text-align: center;
+}
+
+body {
     overflow: hidden;
 }
 
 
 
-h1 {
-    margin: 5px;
-    font-size: 1.5em;
-}
 
-h4 {
-    margin: 5px;
-    font-size: 1.3em;
-}
+
 
 .center {
     position: absolute;
@@ -71,26 +58,12 @@ h4 {
     transform: translate(-50%, -50%);
 }
 
-.aLink {
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 600;
-    margin: 0;
-    color: $fontColor2;
 
-    &:hover {
-        color: $fontColorHover;
-    }
-
-    &:active {
-        transform: scale(0.95, 0.95);
-    }
+.clearfix {
+    clear: both;
 }
 
 
-.invisible {
-    display: none;
-}
 
 
 
@@ -98,71 +71,259 @@ h4 {
 
 
 // main content div
-#divContainer {
+#main-container {
+    padding-top: 50px;
     overflow-y: scroll;
     height: 100%;
-    min-width: 738px;
+    position: relative;
 
 
-    // Navbar
-    #divNavBar {
-        display: block;
-        position: relative;
-        height: $divNavBarHeight;
-        width: 100%;
-    }
+    a {
+        display: inline-block;
+        font-weight: 600;
+        margin: 0;
+        color: $fontColor2;
 
+        &:hover {
+            color: $fontColorHover;
+        }
 
-    // Page container
-    #ngViewContainer {
-        display: block;
-        position: relative;
-        height: calc(100% - #{$divNavBarHeight});
-        background-color: transparent;
-        width: 100%;
-        min-height: 530px;
+        &:active {
+            transform: scale(0.95, 0.95);
+        }
 
-
-        // All Pages
-        .divContent {
-            position: absolute;
-            text-align: center;
+        &:visited {
+            color: $fontColor2;
         }
     }
+
+
+
+
+    // Name
+    h1 {
+        color: $fontColor2;
+        text-shadow: 0 0 10px $fontColor2;
+        font-size: 2.5em;
+    }
+
+
+
+
+    // Heading for each section
+    .a-heading {
+        margin-top: 60px;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+        text-decoration: none;
+        color: $fontColor2;
+        text-shadow: 0 0 3px $fontColor2;
+    }
+
+
+
+
+    // social icons
+    #navbar-social {
+        position: absolute;
+        right: 37px;
+        top: 20px;
+    }
+
+
+
+
+
+    #main-content {
+        width: 80%;
+        display: inline-block;
+
+
+
+        // Education
+        table {
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+
+            tr {
+                border-top: 1px solid $lineColor;
+                border-bottom: 1px solid $lineColor;
+
+                td {
+                    padding: 5px 25px 5px 5px;
+                }
+
+                .td-date {
+                    white-space: nowrap;
+                }
+            }
+        }
+
+
+
+        // Programming skills
+        #programming-container {
+
+            > div {
+                width: 50%;
+                float: left;
+            }
+
+
+            #programming-notes {
+                padding-top: 60px;
+                text-align: center;
+
+                p {
+                    max-width: 400px;
+                    display: inline-block;
+                }
+            }
+
+
+            #programming-skills {
+                text-align: left;
+
+                ul {
+                    margin-left: 20px;
+                    list-style: none;
+
+                    li {
+                        height: 25px;
+                        line-height: 25px;
+
+                        // star list item icons
+                        .star-six {
+                            display: inline-block;
+                            width: 0;
+                            height: 0;
+                            border-left: 5px solid transparent;
+                            border-right: 5px solid transparent;
+                            border-bottom: 10px solid white;
+                            position: relative;
+                            margin-right: 10px;
+                            margin-bottom: 1px;
+                        }
+                        .star-six:after {
+                            width: 0;
+                            height: 0;
+                            border-left: 5px solid transparent;
+                            border-right: 5px solid transparent;
+                            border-top: 10px solid white;
+                            position: absolute;
+                            content: "";
+                            top: 3px;
+                            left: -5px;
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 860px) {
+                > div {
+                    float: none;
+                }
+
+                #programming-notes {
+                    padding-top: 0;
+                    width: 100%;
+                }
+
+                #programming-skills {
+                    margin-top: 20px;
+                    display: inline-block;
+                    width: auto;
+                }
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+        // Portfolio
+        #portfolio {
+            text-align: center;
+
+
+            #info-portfolio {
+                text-align: center;
+                padding-bottom: 15px;
+                font-size: 0.9em;
+                max-width: 600px;
+                display: inline-block;
+            }
+
+
+
+
+            // single portfolio item
+            .portfolio-item {
+                border-top: 1px solid $lineColor2;
+                padding: 20px;
+
+                > div {
+                    width: 50%;
+                }
+
+
+
+                // item left
+                .portfolio-item-left {
+                    position: relative;
+                    height: 200px;
+                    float: left;
+
+                    .portfolio-item-image-container {
+                        position: relative;
+                        top: 0;
+                        height: calc(100% - #{$divLinksLineHeight});
+                    }
+
+                    .portfolio-item-links {
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        line-height: $divLinksLineHeight;
+                        white-space: nowrap;
+
+                        a {
+                            margin: 0 10px;
+                            display: none;
+                        }
+                    }
+                }
+
+                // item right
+                .portfolio-item-right {
+                    float: right;
+
+                    h3, p {
+                        margin: 10px;
+                    }
+                }
+
+
+                @media (max-width: 980px) {
+                    .portfolio-item-left, .portfolio-item-right {
+                        float: none;
+                        width: auto;
+                    }
+                }
+
+            }
+
+            .portfolio-item:last-of-type {
+                border-bottom: 1px solid $lineColor2;
+            }
+        }
+
+    }
 }
-
-
-// container for zoomed images
-#divImgContainer {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    pointer-events: all;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 4000;
-}
-
-
-// Animations for page transitions
-.ng-enter {
-    animation: scaleIn 0.3s both ease-in;
-}
-
-.ng-leave {
-    animation: scaleOut 0.2s both ease-in;
-}
-
-@keyframes scaleIn {
-    from { transform: scale(0, 0); }
-    to { transform: scale(1, 1); }
-}
-
-@keyframes scaleOut {
-    to { transform: scale(0, 0); }
-}
-
-
-
