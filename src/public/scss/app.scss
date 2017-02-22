@@ -85,7 +85,7 @@ body {
         color: $fontColor2;
 
         &:hover {
-            color: $fontColorHover;
+            color: $fontColorHover !important;
         }
 
         &:active {

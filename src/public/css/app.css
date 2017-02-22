@@ -45,7 +45,7 @@ body {
     margin: 0;
     color: #359fd8; }
     #main-container a:hover {
-      color: #006bfd; }
+      color: #006bfd !important; }
     #main-container a:active {
       -webkit-transform: scale(0.95, 0.95);
       transform: scale(0.95, 0.95); }
