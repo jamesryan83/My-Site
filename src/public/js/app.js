@@ -14,10 +14,13 @@ app.init = function () {
     // Create portfolio items
     var link;
     var portfolioItem;
+    var img;
     for (var i = 0; i < app.portfolioData.length; i++) {
         portfolioItem = $("#portfolio-item-template").clone();
 
-        portfolioItem.find("img").first().attr("src", app.portfolioData[i].imgSrc);
+        img = portfolioItem.find("img").first();
+        img.attr("src", app.portfolioData[i].imgSrc);
+        img.attr("alt", "image for website " + app.portfolioData[i].title);
         portfolioItem.find("h3").first().text(app.portfolioData[i].title);
         portfolioItem.find(".portfolio-item-right").first().append(app.portfolioData[i].content);
 
