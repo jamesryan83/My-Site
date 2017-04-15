@@ -52,7 +52,7 @@ app.init = function () {
 
 // Portfolio items
 app.portfolioData = [{
-    "imgSrc": "../res/images/thingz.png",
+    "imgSrc": "../res/images/thingz.jpg",
     "linkWebsite": "http://thingz.azurewebsites.net",
     "linkDownload": "",
     "linkSource": "https://github.com/jamesryan83/thingz",
@@ -67,12 +67,12 @@ app.portfolioData = [{
     "title": "Galaxi",
     "content": "<p>This is a demo home page.  It uses Greensock and ScrollMagic for animations.  Art was made in Inkscape.  Code is html, sass and jQuery</p>"
 }, {
-    "imgSrc": "../res/images/technicorp.png",
-    "linkWebsite": "http://technicorp.azurewebsites.net",
+    "imgSrc": "../res/images/snappi.png",
+    "linkWebsite": "http://snappi.azurewebsites.net",
     "linkDownload": "",
-    "linkSource": "https://github.com/jamesryan83/technicorp",
-    "title": "Technicorp",
-    "content": "<p>This is a demo home page.  It has a parallax scrolling background and I was also trying out using svg images for slanted backgrounds which you can see in the navbar and login dialogs.  Made with html, sass and jQuery</p>"
+    "linkSource": "https://github.com/jamesryan83/snappi",
+    "title": "Snappi",
+    "content": "<p>I wanted to try out Xamarin and made a small app/website for posting images. Code is Xamarin.Forms, Node.js and jQuery</p>"
 }, {
     "imgSrc": "../res/images/neeonn.png",
     "linkWebsite": "http://shoteratetest.azurewebsites.net",
@@ -80,6 +80,13 @@ app.portfolioData = [{
     "linkSource": "https://github.com/jamesryan83/Neeonn",
     "title": "Neeonn",
     "content": "<p>Neeonn is a concept/prototype for a social storyboard sharing platform.  It consists of a website and an Android app</p><p>The website is made with PHP and Laravel on the server, with Backbone and jQuery on the frontend.  The Android app is made with Apache Cordova, Backbone and jQuery</p><p>You can log in with un: test@neeonn.com and pw: neeonn if you want to have a look at the storyboard creating tools inside.  Same login credentials for the app too</p>"
+}, {
+    "imgSrc": "../res/images/technicorp.png",
+    "linkWebsite": "http://technicorp.azurewebsites.net",
+    "linkDownload": "",
+    "linkSource": "https://github.com/jamesryan83/technicorp",
+    "title": "Technicorp",
+    "content": "<p>This is a demo home page.  It has a parallax scrolling background and I was also trying out using svg images for slanted backgrounds which you can see in the navbar and login dialogs.  Made with html, sass and jQuery</p>"
 }, {
     "imgSrc": "../res/images/tasktime.png",
     "linkWebsite": "http://task-time.azurewebsites.net",
