@@ -89,7 +89,7 @@ app.portfolioData = [{
     "content": "<p>This is a demo home page.  It has a parallax scrolling background and I was also trying out using svg images for slanted backgrounds which you can see in the navbar and login dialogs.  Made with html, sass and jQuery</p>"
 }, {
     "imgSrc": "../res/images/tasktime.png",
-    "linkWebsite": "http://task-time.azurewebsites.net",
+    "linkWebsite": "",
     "linkDownload": "",
     "linkSource": "https://github.com/jamesryan83/tasktime",
     "title": "Tasktime",
