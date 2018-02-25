@@ -52,6 +52,13 @@ app.init = function () {
 
 // Portfolio items
 app.portfolioData = [{
+    "imgSrc": "../res/images/menuthing.jpg",
+    "linkWebsite": "http://menuthing.azurewebsites.net",
+    "linkDownload": "",
+    "linkSource": "https://github.com/jamesryan83/temp",
+    "title": "Cuisine King",
+    "content": "<p>This is a startup project I have been working on.  It's similar to Menulog.  It uses Azure, Node.js/Express, html/scss/jQuery.  It's about 33% complete</p>"
+}, {
     "imgSrc": "../res/images/thingz.jpg",
     "linkWebsite": "http://thingz.azurewebsites.net",
     "linkDownload": "",
