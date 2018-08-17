@@ -49,49 +49,60 @@ app.init = function () {
 
 
 
-//{
-//    "imgSrc": "../res/images/menuthing.jpg",
-//    "linkWebsite": "http://menuthing.azurewebsites.net",
-//    "linkDownload": "",
-//    "linkSource": "",
-//    "title": "Cuisine King",
-//    "content": "<p>This is a startup project I am working on.  It's similar to Menulog.  It uses Azure, Node.js/Express, html/scss/jQuery.  It's about 33% complete</p>"
-//},
-
-
 // Portfolio items
 app.portfolioData = [{
+    "imgSrc": "../res/images/cometpages.jpg",
+    "linkWebsite": "https://cometpages.azurewebsites.net",
+    "linkDownload": "",
+    "linkSource": "",
+    "title": "Cometpages",
+    "content": "<p>This is a startup project I'm currently working on.  It uses Azure, SQL Server, Node.js/Express, html/scss/Angular 6</p>"
+ },{
     "imgSrc": "../res/images/thingz.jpg",
-    "linkWebsite": "http://thingz.azurewebsites.net",
+    "linkWebsite": "https://thingz.azurewebsites.net",
     "linkDownload": "",
     "linkSource": "https://github.com/jamesryan83/thingz",
     "title": "Thingz",
     "content": "<p>Demo homepage.  Similar setup to Galaxi (below)</p>" +
         "<p>Probably won't work on Internet Explorer, because it uses webm format videos</p>"
-}, {
+},{
+    "imgSrc": "../res/images/space-bg.jpg",
+    "linkWebsite": "https://jamesryan83.github.io/space-background/",
+    "linkDownload": "",
+    "linkSource": "https://github.com/jamesryan83/space-background",
+    "title": "space-bg.js",
+    "content": "<p>A small javascript library that generates a random background image that's supposed to look like space with stars and nebula cloud</p>"
+ },{
+    "imgSrc": "../res/images/menuthing.jpg",
+    "linkWebsite": "https://cuizineking.azurewebsites.net/",
+    "linkDownload": "",
+    "linkSource": "https://github.com/jamesryan83/Cuizine-king",
+    "title": "Cuisine King",
+    "content": "<p>This is a startup project I was working on in 2017.  It's similar to Menulog.  It uses Azure, Node.js/Express, html/scss/jQuery.  It's about one third complete</p>"
+ }, {
     "imgSrc": "../res/images/galaxi.png",
-    "linkWebsite": "http://galaxi.azurewebsites.net",
+    "linkWebsite": "https://galaxi.azurewebsites.net",
     "linkDownload": "",
     "linkSource": "https://github.com/jamesryan83/galaxi",
     "title": "Galaxi",
     "content": "<p>This is a demo home page.  It uses Greensock and ScrollMagic for animations.  Art was made in Inkscape.  Code is html, sass and jQuery</p>"
 }, {
     "imgSrc": "../res/images/snappi.png",
-    "linkWebsite": "http://snappi.azurewebsites.net",
+    "linkWebsite": "https://snappi.azurewebsites.net",
     "linkDownload": "",
     "linkSource": "https://github.com/jamesryan83/snappi",
     "title": "Snappi",
     "content": "<p>I wanted to try out Xamarin and made a small app/website for posting images. Code is Xamarin.Forms, Node.js and jQuery</p>"
 }, {
     "imgSrc": "../res/images/neeonn.png",
-    "linkWebsite": "http://shoteratetest.azurewebsites.net",
+    "linkWebsite": "https://shoteratetest.azurewebsites.net",
     "linkDownload": "",
     "linkSource": "https://github.com/jamesryan83/Neeonn",
     "title": "Neeonn",
     "content": "<p>Neeonn is a concept/prototype for a social storyboard sharing platform.  It consists of a website and an Android app</p><p>The website is made with PHP and Laravel on the server, with Backbone and jQuery on the frontend.  The Android app is made with Apache Cordova, Backbone and jQuery</p><p>You can log in with un: test@neeonn.com and pw: neeonn if you want to have a look at the storyboard creating tools inside.  Same login credentials for the app too</p>"
 }, {
     "imgSrc": "../res/images/technicorp.png",
-    "linkWebsite": "http://technicorp.azurewebsites.net",
+    "linkWebsite": "https://technicorp.azurewebsites.net",
     "linkDownload": "",
     "linkSource": "https://github.com/jamesryan83/technicorp",
     "title": "Technicorp",
@@ -105,7 +116,7 @@ app.portfolioData = [{
     "content": "<p>Tasktime is a todo list website.  You can create Tasks which are grouped into what are called Timeline Items.  It's a simple way to keep a list of the days tasks</p><p>It's made with SQL Server, PHP and Laravel, html/sass/javascript and Twitter bootstrap</p>"
 }, {
     "imgSrc": "../res/images/scattertale.png",
-    "linkWebsite": "http://scattertale.azurewebsites.net",
+    "linkWebsite": "https://scattertale.azurewebsites.net",
     "linkDownload": "",
     "linkSource": "https://github.com/jamesryan83/scattertale",
     "title": "Scattertale",
