@@ -59,20 +59,13 @@ app.portfolioData = [{
     "content": "<p>This is a startup project I'm currently working on.  It uses Azure, SQL Server, Node.js/Express, html/scss/Angular 6</p>"
  },{
     "imgSrc": "res/images/thingz.jpg",
-    "linkWebsite": "https://thingz.azurewebsites.net",
+    "linkWebsite": "https://jamesryan83.github.io/thingz/",
     "linkDownload": "",
     "linkSource": "https://github.com/jamesryan83/thingz",
     "title": "Thingz",
     "content": "<p>Demo homepage.  Similar setup to Galaxi (below)</p>" +
         "<p>Probably won't work on Internet Explorer, because it uses webm format videos</p>"
 },{
-    "imgSrc": "res/images/space-bg.jpg",
-    "linkWebsite": "https://jamesryan83.github.io/space-background/",
-    "linkDownload": "",
-    "linkSource": "https://github.com/jamesryan83/space-background",
-    "title": "space-bg.js",
-    "content": "<p>A small javascript library that generates a random background image that's supposed to look like space with stars and nebula cloud</p>"
- },{
     "imgSrc": "res/images/menuthing.jpg",
     "linkWebsite": "https://cuizineking.azurewebsites.net/",
     "linkDownload": "",
@@ -81,11 +74,18 @@ app.portfolioData = [{
     "content": "<p>This is a startup project I was working on in 2017.  It's similar to Menulog.  It uses Azure, Node.js/Express, html/scss/jQuery.  It's about one third complete</p>"
  }, {
     "imgSrc": "res/images/galaxi.png",
-    "linkWebsite": "https://galaxi.azurewebsites.net",
+    "linkWebsite": "https://jamesryan83.github.io/galaxi/",
     "linkDownload": "",
     "linkSource": "https://github.com/jamesryan83/galaxi",
     "title": "Galaxi",
     "content": "<p>This is a demo home page.  It uses Greensock and ScrollMagic for animations.  Art was made in Inkscape.  Code is html, sass and jQuery</p>"
+},{
+    "imgSrc": "res/images/space-bg.jpg",
+    "linkWebsite": "https://jamesryan83.github.io/space-background/",
+    "linkDownload": "",
+    "linkSource": "https://github.com/jamesryan83/space-background",
+    "title": "space-bg.js",
+    "content": "<p>A small javascript library that generates a random background image that's supposed to look like space with stars and nebula cloud.  Its in typescript</p>"
 }, {
     "imgSrc": "res/images/snappi.png",
     "linkWebsite": "https://snappi.azurewebsites.net",
@@ -102,7 +102,7 @@ app.portfolioData = [{
     "content": "<p>Neeonn is a concept/prototype for a social storyboard sharing platform.  It consists of a website and an Android app</p><p>The website is made with PHP and Laravel on the server, with Backbone and jQuery on the frontend.  The Android app is made with Apache Cordova, Backbone and jQuery</p><p>You can log in with un: test@neeonn.com and pw: neeonn if you want to have a look at the storyboard creating tools inside.  Same login credentials for the app too</p>"
 }, {
     "imgSrc": "res/images/technicorp.png",
-    "linkWebsite": "https://technicorp.azurewebsites.net",
+    "linkWebsite": "https://jamesryan83.github.io/technicorp/",
     "linkDownload": "",
     "linkSource": "https://github.com/jamesryan83/technicorp",
     "title": "Technicorp",
