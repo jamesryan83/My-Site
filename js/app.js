@@ -95,18 +95,18 @@ app.portfolioData = [{
     "content": "<p>A small javascript library that generates a random background image that's supposed to look like space with stars and nebula cloud.  Its in typescript</p>"
 }, {
     "imgSrc": "res/images/snappi.png",
-    "linkWebsite": "https://snappi.azurewebsites.net",
+    "linkWebsite": "",
     "linkDownload": "",
     "linkSource": "https://github.com/jamesryan83/snappi",
     "title": "Snappi",
     "content": "<p>I wanted to try out Xamarin and made a small app/website for posting images. Code is Xamarin.Forms, Node.js and jQuery</p>"
 }, {
     "imgSrc": "res/images/neeonn.png",
-    "linkWebsite": "https://shoteratetest.azurewebsites.net",
+    "linkWebsite": "",
     "linkDownload": "",
     "linkSource": "https://github.com/jamesryan83/Neeonn",
     "title": "Neeonn",
-    "content": "<p>Neeonn is a concept/prototype for a social storyboard sharing platform.  It consists of a website and an Android app</p><p>The website is made with PHP and Laravel on the server, with Backbone and jQuery on the frontend.  The Android app is made with Apache Cordova, Backbone and jQuery</p><p>You can log in with un: test@neeonn.com and pw: neeonn if you want to have a look at the storyboard creating tools inside.  Same login credentials for the app too</p>"
+    "content": "<p>Neeonn is a concept/prototype for a social storyboard sharing platform.  It consists of a website and an Android app</p><p>The website is made with PHP and Laravel on the server, with Backbone and jQuery on the frontend.  The Android app is made with Apache Cordova, Backbone and jQuery</p>"
 }, {
     "imgSrc": "res/images/technicorp.png",
     "linkWebsite": "https://jamesryan83.github.io/technicorp/",
