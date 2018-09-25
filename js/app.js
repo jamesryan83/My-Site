@@ -51,13 +51,6 @@ app.init = function () {
 
 // Portfolio items
 app.portfolioData = [{
-    "imgSrc": "res/images/cometpages.jpg",
-    "linkWebsite": "https://cometpages.azurewebsites.net",
-    "linkDownload": "",
-    "linkSource": "",
-    "title": "Cometpages",
-    "content": "<p>This is a startup project I'm currently working on.  It uses Azure, SQL Server, Node.js/Express, html/scss/Angular 6</p>"
- },{
     "imgSrc": "res/images/thingz.jpg",
     "linkWebsite": "https://jamesryan83.github.io/thingz/",
     "linkDownload": "",
