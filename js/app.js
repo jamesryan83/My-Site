@@ -57,7 +57,7 @@ app.portfolioData = [{
     "linkSource": "https://github.com/jamesryan83/thingz",
     "title": "Thingz",
     "content": "<p>Demo homepage.  Similar setup to Galaxi (below)</p>" +
-        "<p>Probably won't work on Internet Explorer, because it uses webm format videos</p>"
+        "<p>Doesn't work on Internet Explorer because it uses webm format videos</p>"
 },{
     "imgSrc": "res/images/blob-tree.PNG",
     "linkWebsite": "https://jamesryan83.github.io/blob-tree/",
@@ -71,7 +71,7 @@ app.portfolioData = [{
     "linkDownload": "",
     "linkSource": "https://github.com/jamesryan83/Cuizine-king",
     "title": "Cuisine King",
-    "content": "<p>This is a startup project I was working on in 2017.  It's similar to Menulog.  It uses Azure, Node.js/Express, html/scss/jQuery.  It's about one third complete</p>"
+    "content": "<p>This is a prototype for a startup project I was working on in 2017.  It's similar to Menulog.  It uses Azure, Node.js/Express, html/scss/jQuery</p>"
 }, {
     "imgSrc": "res/images/galaxi.png",
     "linkWebsite": "https://jamesryan83.github.io/galaxi/",
