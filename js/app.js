@@ -67,7 +67,7 @@ app.portfolioData = [{
     "content": "<p>Small library that creates a file/folder tree from a list of Azure blobs</p>"
 },{
     "imgSrc": "res/images/menuthing.jpg",
-    "linkWebsite": "https://cuizineking.azurewebsites.net/",
+    "linkWebsite": "",
     "linkDownload": "",
     "linkSource": "https://github.com/jamesryan83/Cuizine-king",
     "title": "Cuisine King",
